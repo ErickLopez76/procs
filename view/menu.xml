@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <menuitem name="Procedimentos" id="menu_root" sequence="110"/>
+
+        <menuitem name="General" id="menu_general" parent="menu_root"/>
+
+        <record model="ir.actions.act_window" id="action_proc">
+            <field name="name">proc</field>
+            <field name="res_model">procs.proc</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Procedimiento" id="menu_procedimiento" parent="menu_general"
+            sequence="1" action="action_proc"/>
+
+
+        <record model="ir.ui.view" id="procedimiento_form">
+            <field name="name">proc form view</field>
+            <field name="model">procs.proc</field>
+            <field name="arch" type="xml">
+                <form string="Procedimiento">
+                    <sheet>
+                        <group col="2">
+                            <field name = "name"/>
+                            <field name = "area"/>
+                            <field name = "gerencia"/>
+                            <field name ="unidad"/>
+                            <field name = "depto"/>
+                            <field name = "fecha"/>
+                            <field name = "pasos"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model ="ir.ui.view" id="pasos_tree">
+            <field name="name">paso.tree</field>
+            <field name="model">procs.paso</field>
+            <field name="arch" type="xml">
+                <tree string="Pasos">
+                    <field name="numero" string="Número"/>
+                    <field name="responsable"/>
+                    <field name="descripcion"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+   
+    </data>
+</openerp>
