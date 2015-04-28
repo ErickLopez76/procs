@@ -41,7 +41,7 @@
             <field name="name">paso.tree</field>
             <field name="model">procs.paso</field>
             <field name="arch" type="xml">
-                <tree string="Pasos">
+                <tree string="Pasos" editable="bottom" delete="true" create="true">
                     <field name="numero" string="Número"/>
                     <field name="responsable"/>
                     <field name="descripcion"/>
