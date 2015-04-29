@@ -6,3 +6,4 @@ class paso(models.Model):
     numero      = fields.Integer(required=True)
     responsable = fields.Char()
     descripcion = fields.Text()
+    proc        = fields.Many2one('procs.proc')

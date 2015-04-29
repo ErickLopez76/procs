@@ -11,7 +11,7 @@ class proc(models.Model):
     depto       = fields.Many2one('procs.depto')
     proceso     = fields.Many2one('procs.proceso')
     fecha       = fields.Char()
-    pasos       = fields.Many2many('procs.paso')
+    pasos       = fields.One2many('procs.paso','proc')
 
     @api.onchange('area')
     def _onchange_area(self):

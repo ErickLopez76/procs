@@ -26,7 +26,7 @@
                             <field name = "name"/>
                             <field name = "area"/>
                             <field name = "gerencia"/>
-                            <field name ="unidad"/>
+                            <field name = "unidad"/>
                             <field name = "depto"/>
                             <field name = "fecha"/>
                             <field name = "pasos"/>
@@ -41,7 +41,7 @@
             <field name="name">paso.tree</field>
             <field name="model">procs.paso</field>
             <field name="arch" type="xml">
-                <tree string="Pasos" editable="bottom" delete="true" create="true">
+                <tree string="Pasos" editable="bottom">
                     <field name="numero" string="Número"/>
                     <field name="responsable"/>
                     <field name="descripcion"/>
