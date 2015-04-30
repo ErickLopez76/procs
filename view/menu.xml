@@ -27,7 +27,7 @@
                             <field name = "area"/>
                             <field name = "gerencia"/>
                             <field name = "unidad"/>
-                            <field name = "depto"/>
+                            <field name = "depto" string="Departamento"/>
                             <field name = "proceso"/>
                             <field name = "fecha"/>
                             <field name = "pasos"/>
@@ -35,6 +35,19 @@
                         </group>
                     </sheet>
                 </form>
+            </field>
+        </record>
+        
+        <record model ="ir.ui.view" id="procs_tree">
+            <field name="name">proc.tree</field>
+            <field name="model">procs.proc</field>
+            <field name="arch" type="xml">
+                <tree string="Procedimientos">
+                    <field name="name"/>
+                    <field name="gerencia" string="Gerencia"/>
+                    <field name="unidad" string="Unidad"/>
+                    <field name="depto" string="Departamento"/>
+                </tree>
             </field>
         </record>
 
