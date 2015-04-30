@@ -28,6 +28,7 @@
                             <field name = "gerencia"/>
                             <field name = "unidad"/>
                             <field name = "depto"/>
+                            <field name = "proceso"/>
                             <field name = "fecha"/>
                             <field name = "pasos"/>
                             <!-- <field name = "pasos" options="{'no_open':True,'no_create':1,'no_create_edit':1}" /> -->
