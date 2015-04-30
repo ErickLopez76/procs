@@ -59,6 +59,9 @@
                     <group expand="0" string="Group By">
                         <filter string="Nombre" icon="terp-personal"  domain="[]" context="{'group_by':'name'}"/>
                         <filter string="Area" context="{'group_by':'area'}"/>
+                        <filter string="Gerencia" context="{'group_by':'gerencia'}"/>
+                        <filter string="Unidad" context="{'group_by':'unidad'}"/>
+                        <filter string="Departamento" context="{'group_by':'depto'}"/>
                     </group>
                 </search>
             </field>
