@@ -49,7 +49,20 @@
             </field>
         </record>
 
-
+        <record model="ir.ui.view" id="procs_search_view">
+            <field name="name">proc.search</field>
+            <field name="model">procs.proc</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="area"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Nombre" icon="terp-personal"  domain="[]" context="{'group_by':'name'}"/>
+                        <filter string="Area" context="{'group_by':'area'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
 
    
     </data>
